@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effective Communication: The 4 C's</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .page {
+            min-height: 100vh;
+            scroll-margin-top: 80px;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #3B82F6;
+            border-radius: 2px;
+        }
+        .floating-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .principle-icon {
+            transition: all 0.3s ease;
+        }
+        .principle-card:hover .principle-icon {
+            transform: scale(1.1);
+        }
+        .communication-diagram {
+            position: relative;
+            height: 300px;
+        }
+        .progress-circle {
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            transition: stroke-dashoffset 1s ease;
+        }
+        .active-section {
+            background-color: #3B82F6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <!-- Navigation -->
+
+    <nav class="floating-nav fixed top-0 left-0 right-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-comments text-primary text-2xl mr-3"></i>
+                    <h1 class="text-xl font-bold text-dark">Effective Communication</h1>
+                </div>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <a href="#intro" class="nav-link px-4 py-2 rounded-lg transition-all duration-300" data-section="intro">Intro</a>
+                    <a href="#clarity" class="nav-link px-4 py-2 rounded-lg transition-all duration-300" data-section="clarity">Clarity</a>
+                    <a href="#coherence" class="nav-link px-4 py-2 rounded-lg transition-all duration-300" data-section="coherence">Coherence</a>
+                    <a href="#conciseness" class="nav-link px-4 py-2 rounded-lg transition-all duration-300" data-section="conciseness">Conciseness</a>
+                    <a href="#correctness" class="nav-link px-4 py-2 rounded-lg transition-all duration-300" data-section="correctness">Correctness</a>
+                    <a href="#integration" class="nav-link px-4 py-2 rounded-lg transition-all duration-300" data-section="integration">Integration</a>
+                    <a href="#conclusion" class="nav-link px-4 py-2 rounded-lg transition-all duration-300" data-section="conclusion">Conclusion</a>
+                </div>
+            </div>
+        </div>
+        <div class="h-1 w-full bg-gray-200">
+            <div id="progress-bar" class="h-full bg-primary transition-all duration-300" style="width: 0%"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Introduction Section -->
+        <section id="intro" class="page">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12 animate-fade-in">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-dark">
+                            Principles of <span class="text-primary">Effective Communication</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                            A comprehensive guide to mastering the 4 C's of communication for academic and professional success
+                        </p>
+                        
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 items-center mb-16">
+                        <div class="animate-slide-up">
+                            <h2 class="section-title text-3xl font-bold mb-6">Why Communication Matters</h2>
+                            <div class="space-y-4">
+                                <p class="text-lg">Good communication is key to doing well in school, at work, and in your personal life. It’s not just about sharing information—it’s about making sure your message is understood the way you meant it.</p>
+                                <p class="text-lg">The 4 C's framework is a simple way to improve how you communicate, whether you're writing a school paper or giving a work presentation.</p>
+                                <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-primary">
+                                    <p class="text-lg"><i class="fas fa-quote-left text-primary mr-2"></i>Communication works for those who work at it.<i class="fas fa-quote-right text-primary ml-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="communication-diagram animate-fade-in">
+                            <div class="bg-white p-6 rounded-xl shadow-lg h-full">
+                                <h3 class="text-xl font-bold mb-4 text-center text-primary">The Communication Process</h3>
+                                <div class="relative h-64">
+                                    <!-- Sender -->
+                                    <div class="absolute left-1/4 top-4 transform -translate-x-1/2">
+                                        <div class="bg-primary text-white p-4 rounded-lg text-center w-32">
+                                            <i class="fas fa-user text-2xl mb-2"></i>
+                                            <p class="font-bold">Sender</p>
+                                            <p class="text-xs">Encodes Message</p>
+                                        </div>
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-accent text-white p-4 rounded-lg text-center w-40">
+                                            <i class="fas fa-comment-alt text-2xl mb-2"></i>
+                                            <p class="font-bold">Message</p>
+                                            <p class="text-xs">Content & Intent</p>
+                                        </div>
+                                    </div>
+                                    <!-- Receiver -->
+                                    <div class="absolute right-1/4 top-4 transform translate-x-1/2">
+                                        <div class="bg-secondary text-white p-4 rounded-lg text-center w-32">
+                                            <i class="fas fa-user-friends text-2xl mb-2"></i>
+                                            <p class="font-bold">Receiver</p>
+                                            <p class="text-xs">Decodes Message</p>
+                                        </div>
+                                    </div>
+                                    <!-- Arrows -->
+                                    <div class="absolute left-1/4 top-24 w-1/4 h-1 bg-primary"></div>
+                                    <div class="absolute right-1/4 top-24 w-1/4 h-1 bg-primary"></div>
+                                    <div class="absolute top-24 left-1/2 transform -translate-x-1/2">
+                                        <i class="fas fa-arrow-right text-primary"></i>
+                                    </div>
+                                    <div class="absolute top-24 right-1/2 transform translate-x-1/2">
+                                        <i class="fas fa-arrow-left text-primary"></i>
+                                    </div>
+                                    <!-- Feedback Loop -->
+                                    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-redo text-accent mr-2"></i>
+                                            <span class="text-sm font-semibold">Feedback Loop</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The 4 C's Overview -->
+                    <div class="mb-12">
+                        <h2 class="section-title text-3xl font-bold mb-8">The Four C's Framework</h2>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <!-- Clarity Card -->
+                            <div class="principle-card bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                                <div class="principle-icon w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-lightbulb text-primary text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-center mb-3">Clarity</h3>
+                                <p class="text-gray-600 text-center mb-4">Clear and understandable message</p>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Simple, direct language</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Avoid jargon and ambiguity</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Well-defined purpose</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coherence Card -->
+                            <div class="principle-card bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                                <div class="principle-icon w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-link text-accent text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-center mb-3">Coherence</h3>
+                                <p class="text-gray-600 text-center mb-4">Logical flow and connection</p>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Organized structure</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Smooth transitions</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Consistent arguments</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Conciseness Card -->
+                            <div class="principle-card bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                                <div class="principle-icon w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-bullseye text-yellow-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-center mb-3">Conciseness</h3>
+                                <p class="text-gray-600 text-center mb-4">Brief and to the point</p>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Eliminate unnecessary words</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Get straight to the point</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Respect reader's time</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Correctness Card -->
+                            <div class="principle-card bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                                <div class="principle-icon w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-center mb-3">Correctness</h3>
+                                <p class="text-gray-600 text-center mb-4">Accurate and error-free</p>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Factual accuracy</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Proper grammar</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                                        <span>Appropriate tone</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interconnection Diagram -->
+                    <div class="bg-white rounded-xl shadow-lg p-4">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary">The Interconnected Principles</h3>
+                        <div class="flex justify-center">
+                            <div class="relative w-64 h-64">
+                                <!-- Center -->
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-32 h-32 bg-primary rounded-full flex items-center justify-center">
+                                        <span class="text-white text-center font-bold">Effective<br>Communication</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Surrounding circles -->
+                                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <div class="w-24 h-14 bg-blue-100 rounded-full flex items-center justify-center border-4 border-white shadow">
+                                        <span class="font-bold text-primary">Clarity</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                                    <div class="w-24 h-14 p-5 bg-green-100 rounded-full flex items-center justify-center border-4 border-white shadow">
+                                        <span class="font-bold text-accent">Coherence</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                                    <div class="w-24 p-5 h-14 bg-yellow-100 rounded-full flex items-center justify-center border-4 border-white shadow">
+                                        <span class="font-bold text-yellow-600">Conciseness</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="absolute top-1/2 left-0 mr-2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <div class="w-24 h-14 bg-red-100 rounded-full flex items-center justify-center border-4 border-white shadow">
+                                        <span class="font-bold text-red-600">Correctness</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Connecting lines -->
+                               
+                            </div>
+                        </div>
+                        <p class="text-center mt-6 text-gray-600">All four principles work together to create truly effective communication</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Coherence Section -->
+        <section id="coherence" class="page">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <div class="inline-flex items-center bg-accent text-white px-6 py-2 rounded-full font-semibold mb-4">
+                            Principle 1
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">
+                            <span class="text-accent">Coherence</span> in Communication
+                        </h2>
+                        <p class="text-xl text-gray-600">Creating logical flow and connections in your message</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Understanding Coherence</h3>
+                            <div class="space-y-4">
+                                <p class="text-lg">Coherence means your ideas are connected in a logical way. It’s what makes your message flow smoothly and feel like one complete piece.</p>
+                                <p class="text-lg">When your message is coherent, your audience can easily follow you from one point to the next. Even complex topics become simpler to understand.</p>
+                                
+                                <div class="bg-green-50 p-6 rounded-xl">
+                                    <h4 class="text-xl font-bold mb-3 text-accent">The Coherence Test</h4>
+                                    <p>Ask: "If I remove the headings and formatting, would the logical connections still be clear?"</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coherence Elements -->
+                            <div class="mt-8">
+                                <h4 class="text-xl font-bold mb-4 text-secondary">Elements of Coherence</h4>
+                                <div class="space-y-4">
+                                    <div class="bg-white p-4 rounded-lg shadow">
+                                        <h5 class="font-bold mb-2 text-primary">Logical Organization</h5>
+                                        <p class="text-sm">Ideas arranged in a meaningful sequence (chronological, problem-solution, cause-effect).</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg shadow">
+                                        <h5 class="font-bold mb-2 text-primary">Transitional Devices</h5>
+                                        <p class="text-sm">Words and phrases that connect ideas (however, therefore, for example).</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg shadow">
+                                        <h5 class="font-bold mb-2 text-primary">Paragraph Unity</h5>
+                                        <p class="text-sm">Each paragraph focuses on one main idea with supporting details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Organizational Patterns</h3>
+                            
+                            <div class="space-y-6">
+                                <!-- Pattern 1 -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <div class="flex items-start">
+                                        <div class="bg-accent text-white rounded-lg p-3 mr-4">
+                                            <i class="fas fa-history"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-2">Chronological Order</h5>
+                                            <p class="text-sm text-gray-600">Present ideas in time sequence. Best for narratives, processes, and historical accounts.</p>
+                                            <div class="mt-2 text-xs text-accent font-semibold">
+                                                Signal words: First, next, then, finally, after, before
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Pattern 2 -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <div class="flex items-start">
+                                        <div class="bg-accent text-white rounded-lg p-3 mr-4">
+                                            <i class="fas fa-balance-scale"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-2">Problem-Solution</h5>
+                                            <p class="text-sm text-gray-600">Present a problem followed by solutions. Effective for proposals and persuasive writing.</p>
+                                            <div class="mt-2 text-xs text-accent font-semibold">
+                                                Signal words: Problem, issue, solution, solve, address
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Pattern 3 -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <div class="flex items-start">
+                                        <div class="bg-accent text-white rounded-lg p-3 mr-4">
+                                            <i class="fas fa-project-diagram"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-2">Compare-Contrast</h5>
+                                            <p class="text-sm text-gray-600">Examine similarities and differences. Useful for analysis and evaluation.</p>
+                                            <div class="mt-2 text-xs text-accent font-semibold">
+                                                Signal words: Similarly, likewise, however, in contrast, whereas
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Transition Words -->
+                            <div class="mt-8">
+                                <h4 class="text-lg font-bold mb-3 text-primary">Common Transition Words</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Additionally</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Furthermore</span>
+                                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">However</span>
+                                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Nevertheless</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Therefore</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Consequently</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">For example</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Specifically</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coherence Example -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary">Coherence in Practice</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-lg mb-3 text-red-600">Incoherent Paragraph</h4>
+                                <div class="bg-gray-100 p-5 rounded-lg">
+                                    <p class="italic">"Global warming is a problem. Polar bears are losing their habitat. Carbon dioxide levels have increased. Some people don't believe in climate change. Renewable energy is becoming cheaper. Sea levels are rising."</p>
+                                </div>
+                                <div class="mt-4 p-4 bg-red-50 rounded-lg">
+                                    <p class="text-sm"><strong>Problems:</strong> Random facts with no logical connection, no transitions, no clear focus.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-3 text-green-600">Coherent Paragraph</h4>
+                                <div class="bg-gray-100 p-5 rounded-lg">
+                                    <p class="italic">"Global warming presents serious environmental challenges. Scientific evidence shows that carbon dioxide levels have increased significantly, causing rising temperatures. Consequently, sea levels are rising and habitats like those of polar bears are threatened. Although some people question climate science, renewable energy solutions are becoming increasingly affordable and offer viable alternatives."</p>
+                                </div>
+                                <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                                    <p class="text-sm"><strong>Improvements:</strong> Logical flow (problem → evidence → effects → solution), transitions (Consequently, Although), unified focus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clarity Section -->
+        <section id="clarity" class="page bg-light">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <div class="inline-flex items-center bg-primary text-white px-6 py-2 rounded-full font-semibold mb-4">
+                            Principle 2
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">
+                            <span class="text-primary">Clarity</span> in Communication
+                        </h2>
+                        <p class="text-xl text-gray-600">Making your message clear and understandable</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">What is Clarity?</h3>
+                            <div class="space-y-4">
+                                <p class="text-lg">Clarity means your message is easily understood without confusion or ambiguity. It's about ensuring your audience grasps exactly what you intend to communicate.</p>
+                                <p class="text-lg">Clear communication eliminates misunderstandings, saves time, and ensures your ideas are received as intended.</p>
+                                
+                                <div class="bg-blue-50 p-6 rounded-xl">
+                                    <h4 class="text-xl font-bold mb-3 text-primary">The Clarity Test</h4>
+                                    <p>Ask yourself: "If someone reads/hears this once, will they understand exactly what I mean?"</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="text-xl font-bold mb-4 text-secondary">Achieving Clarity</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                            <i class="fas fa-bullseye"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-1">Know Your Purpose</h5>
+                                            <p class="text-gray-600">Be clear about what you want to achieve with your communication.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-1">Understand Your Audience</h5>
+                                            <p class="text-gray-600">Tailor your language to their knowledge level and needs.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                            <i class="fas fa-language"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-1">Use Simple Language</h5>
+                                            <p class="text-gray-600">Avoid jargon and complex sentences when possible.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Examples & Techniques</h3>
+                            
+                            <!-- Before/After Example -->
+                            <div class="mb-8">
+                                <div class="flex space-x-4 mb-4">
+                                    <div class="flex-1">
+                                        <div class="bg-red-100 text-red-800 p-3 rounded-t-lg">
+                                            <h4 class="font-bold flex items-center">
+                                                <i class="fas fa-times-circle mr-2"></i> Unclear
+                                            </h4>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-b-lg shadow">
+                                            <p class="italic">"We need to optimize our synergistic approaches to enhance productivity metrics."</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="bg-green-100 text-green-800 p-3 rounded-t-lg">
+                                            <h4 class="font-bold flex items-center">
+                                                <i class="fas fa-check-circle mr-2"></i> Clear
+                                            </h4>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-b-lg shadow">
+                                            <p class="italic">"We need to work together better to get more work done."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Clarity Techniques -->
+                            <div class="bg-white rounded-xl shadow-lg p-6">
+                                <h4 class="text-xl font-bold mb-4 text-primary">Clarity Techniques</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 text-blue-800 rounded-lg p-3 mr-4">
+                                            <i class="fas fa-list-ol"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-1">Use Examples</h5>
+                                            <p class="text-sm text-gray-600">Concrete examples make abstract concepts clearer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 text-blue-800 rounded-lg p-3 mr-4">
+                                            <i class="fas fa-images"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-1">Visual Aids</h5>
+                                            <p class="text-sm text-gray-600">Charts, diagrams, and images enhance understanding.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 text-blue-800 rounded-lg p-3 mr-4">
+                                            <i class="fas fa-edit"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold mb-1">Revision</h5>
+                                            <p class="text-sm text-gray-600">Review and simplify your message.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clarity Checklist -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary">Clarity Checklist</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-lg mb-4 text-secondary">For Writing</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Is the main idea obvious in the first paragraph?</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Are technical terms defined?</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Is the sentence structure straightforward?</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Are there concrete examples?</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-4 text-secondary">For Speaking</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Is your speech organized logically?</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Do you avoid jargon when speaking to non-experts?</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Do you check for understanding?</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <input type="checkbox" class="mr-3 h-5 w-5 text-primary" checked disabled>
+                                        <span>Do you use appropriate pacing and emphasis?</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Conciseness Section -->
+        <section id="conciseness" class="page bg-light">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <div class="inline-flex items-center bg-yellow-500 text-white px-6 py-2 rounded-full font-semibold mb-4">
+                            Principle 3
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">
+                            <span class="text-yellow-600">Conciseness</span> in Communication
+                        </h2>
+                        <p class="text-xl text-gray-600">Being brief yet complete in your message</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">The Value of Conciseness</h3>
+                            <div class="space-y-4">
+                                <p class="text-lg">Conciseness means expressing ideas completely in as few words as possible. It's about eliminating unnecessary words while preserving meaning.</p>
+                                <p class="text-lg">Concise communication respects the audience's time, increases impact, and improves clarity by removing distractions.</p>
+                                
+                                <div class="bg-yellow-50 p-6 rounded-xl">
+                                    <h4 class="text-xl font-bold mb-3 text-yellow-700">The Conciseness Test</h4>
+                                    <p>Ask: "Can I remove any words without changing the meaning? Can I say this more directly?"</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Wordiness Problems -->
+                            <div class="mt-8">
+                                <h4 class="text-xl font-bold mb-4 text-secondary">Common Wordiness Problems</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                                        <div>
+                                            <p class="font-bold">Redundant Pairs</p>
+                                            <p class="text-sm text-gray-600">"each and every" → "each"</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                                        <div>
+                                            <p class="font-bold">Empty Phrases</p>
+                                            <p class="text-sm text-gray-600">"due to the fact that" → "because"</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                                        <div>
+                                            <p class="font-bold">Nominalizations</p>
+                                            <p class="text-sm text-gray-600">"make a decision" → "decide"</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                                        <div>
+                                            <p class="font-bold">Passive Voice</p>
+                                            <p class="text-sm text-gray-600">"The report was written by me" → "I wrote the report"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Conciseness Techniques</h3>
+                            
+                            <!-- Technique 1 -->
+                            <div class="mb-6">
+                                <h4 class="font-bold text-lg mb-3 text-primary">1. Eliminate Unnecessary Words</h4>
+                                <div class="bg-white p-4 rounded-lg shadow">
+                                    <p class="text-sm mb-2"><span class="line-through text-red-600">"At this point in time, we are in the process of considering"</span></p>
+                                    <p class="text-sm text-green-600">"We are considering"</p>
+                                    <div class="mt-2 text-xs text-gray-500">Reduction: 9 words → 3 words</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Technique 2 -->
+                            <div class="mb-6">
+                                <h4 class="font-bold text-lg mb-3 text-primary">2. Use Strong Verbs</h4>
+                                <div class="bg-white p-4 rounded-lg shadow">
+                                    <p class="text-sm mb-2"><span class="line-through text-red-600">"We will conduct an investigation of the matter"</span></p>
+                                    <p class="text-sm text-green-600">"We will investigate the matter"</p>
+                                    <div class="mt-2 text-xs text-gray-500">Reduction: 7 words → 5 words</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Technique 3 -->
+                            <div class="mb-6">
+                                <h4 class="font-bold text-lg mb-3 text-primary">3. Avoid "There is/There are"</h4>
+                                <div class="bg-white p-4 rounded-lg shadow">
+                                    <p class="text-sm mb-2"><span class="line-through text-red-600">"There are many students who struggle with math"</span></p>
+                                    <p class="text-sm text-green-600">"Many students struggle with math"</p>
+                                    <div class="mt-2 text-xs text-gray-500">Reduction: 7 words → 5 words</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Word Count Impact -->
+                            <div class="bg-yellow-50 p-5 rounded-lg">
+                                <h5 class="font-bold mb-2 text-yellow-700">Impact of Conciseness</h5>
+                                <div class="space-y-3">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium">Wordy Email</span>
+                                            <span class="text-sm font-medium">250 words</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-500 h-2 rounded-full" style="width: 100%"></div>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-1">Reading time: ~2 minutes</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium">Concise Email</span>
+                                            <span class="text-sm font-medium">100 words</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-green-500 h-2 rounded-full" style="width: 40%"></div>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-1">Reading time: ~45 seconds</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm mt-3"><strong>60% time savings</strong> with concise communication</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conciseness Exercise -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary">Conciseness Practice</h3>
+                        <div class="space-y-6">
+                            <!-- Exercise 1 -->
+                            <div class="p-5 border rounded-lg">
+                                <p class="font-bold mb-3">Rewrite this wordy sentence:</p>
+                                <p class="italic mb-4 text-gray-600">"In the event that you have any questions with regard to the material, please feel free to contact me at your earliest convenience."</p>
+                                <div class="bg-gray-100 p-4 rounded">
+                                    <p class="text-sm font-semibold mb-2">Hint: Replace phrases with simpler alternatives</p>
+                                    <ul class="text-xs space-y-1">
+                                        <li>"In the event that" → "If"</li>
+                                        <li>"with regard to" → "about"</li>
+                                        <li>"please feel free to" → "please"</li>
+                                        <li>"at your earliest convenience" → "when you can"</li>
+                                    </ul>
+                                </div>
+                                <div class="mt-4">
+                                    <textarea class="w-full p-3 border rounded-lg" rows="2" placeholder="Write your concise version here..."></textarea>
+                                </div>
+                                <div class="mt-3 text-right">
+                                    <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">
+                                        Show Solution
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Solution (hidden by default) -->
+                            <div id="solution1" class="hidden p-5 bg-green-50 rounded-lg">
+                                <h4 class="font-bold text-green-700 mb-2">Suggested Solution:</h4>
+                                <p class="italic">"If you have questions about the material, please contact me."</p>
+                                <p class="text-sm mt-2">Reduction: 24 words → 9 words (63% reduction)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Correctness Section -->
+        <section id="correctness" class="page">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <div class="inline-flex items-center bg-red-500 text-white px-6 py-2 rounded-full font-semibold mb-4">
+                            Principle 4
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">
+                            <span class="text-red-600">Correctness</span> in Communication
+                        </h2>
+                        <p class="text-xl text-gray-600">Ensuring accuracy and appropriateness in your message</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Dimensions of Correctness</h3>
+                            <div class="space-y-4">
+                                <p class="text-lg">Correctness encompasses factual accuracy, grammatical precision, appropriate tone, and proper formatting. It establishes credibility and prevents misunderstandings.</p>
+                                <p class="text-lg">Errors in communication can undermine your message, damage your credibility, and lead to serious consequences in academic and professional settings.</p>
+                                
+                                <div class="bg-red-50 p-6 rounded-xl">
+                                    <h4 class="text-xl font-bold mb-3 text-red-700">The Correctness Test</h4>
+                                    <p>Ask: "Are all facts verified? Is the grammar correct? Is the tone appropriate?"</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Importance of Correctness -->
+                            <div class="mt-8">
+                                <h4 class="text-xl font-bold mb-4 text-secondary">Why Correctness Matters</h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                                        <i class="fas fa-user-check text-primary text-2xl mb-2"></i>
+                                        <p class="font-bold text-sm">Credibility</p>
+                                        <p class="text-xs text-gray-600">Errors reduce perceived authority</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                                        <i class="fas fa-exclamation-triangle text-primary text-2xl mb-2"></i>
+                                        <p class="font-bold text-sm">Professionalism</p>
+                                        <p class="text-xs text-gray-600">Shows attention to detail</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                                        <i class="fas fa-balance-scale text-primary text-2xl mb-2"></i>
+                                        <p class="font-bold text-sm">Clarity</p>
+                                        <p class="text-xs text-gray-600">Prevents misinterpretation</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                                        <i class="fas fa-shield-alt text-primary text-2xl mb-2"></i>
+                                        <p class="font-bold text-sm">Trust</p>
+                                        <p class="text-xs text-gray-600">Builds confidence in your message</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Common Errors & Solutions</h3>
+                            
+                            <!-- Error Examples -->
+                            <div class="space-y-6">
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h5 class="font-bold mb-2 text-red-600">Frequently Confused Words</h5>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div>
+                                            <p class="text-sm font-semibold">Incorrect</p>
+                                            <ul class="text-xs space-y-1 mt-2">
+                                                <li>Their going now</li>
+                                                <li>Its a problem</li>
+                                                <li>Your welcome</li>
+                                                <li>Affect vs. effect</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-green-600">Correct</p>
+                                            <ul class="text-xs space-y-1 mt-2">
+                                                <li>They're going now</li>
+                                                <li>It's a problem</li>
+                                                <li>You're welcome</li>
+                                                <li>Effect (noun) vs. affect (verb)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h5 class="font-bold mb-2 text-red-600">Grammatical Errors</h5>
+                                    <div class="space-y-3">
+                                        <div>
+                                            <p class="text-xs font-semibold">Comma Splice:</p>
+                                            <p class="text-xs"><span class="line-through">"I like pizza, it's my favorite."</span> → "I like pizza; it's my favorite."</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs font-semibold">Subject-Verb Agreement:</p>
+                                            <p class="text-xs"><span class="line-through">"The team are working."</span> → "The team is working."</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs font-semibold">Pronoun Agreement:</p>
+                                            <p class="text-xs"><span class="line-through">"Everyone should bring their book."</span> → "Everyone should bring his or her book."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Proofreading Tips -->
+                                <div class="bg-blue-50 p-5 rounded-lg">
+                                    <h5 class="font-bold mb-2 text-primary">Proofreading Strategies</h5>
+                                    <ol class="text-sm space-y-2">
+                                        <li class="flex items-start">
+                                            <span class="bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2">1</span>
+                                            <span>Take a break before proofreading</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2">2</span>
+                                            <span>Read aloud to catch awkward phrasing</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2">3</span>
+                                            <span>Check for one type of error at a time</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2">4</span>
+                                            <span>Use spell check but don't rely on it</span>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appropriateness Scale -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary">Appropriate Tone & Style</h3>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold mb-4 text-secondary">The Formality Spectrum</h4>
+                            <div class="relative h-20 bg-gradient-to-r from-green-100 via-blue-100 to-red-100 rounded-lg">
+                                <!-- Markers -->
+                                <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+                                    <div class="bg-green-600 text-white px-3 py-1 rounded-lg text-sm">
+                                        <i class="fas fa-user-friends mr-1"></i> Informal
+                                    </div>
+                                    <p class="text-xs mt-1">Personal conversations<br>Text messages</p>
+                                </div>
+                                <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <div class="bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">
+                                        <i class="fas fa-briefcase mr-1"></i> Professional
+                                    </div>
+                                    <p class="text-xs mt-1">Business emails<br>Workplace communication</p>
+                                </div>
+                                <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                                    <div class="bg-red-600 text-white px-3 py-1 rounded-lg text-sm">
+                                        <i class="fas fa-graduation-cap mr-1"></i> Formal
+                                    </div>
+                                    <p class="text-xs mt-1">Academic papers<br>Official documents</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Context Examples -->
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <h5 class="font-bold mb-3 text-green-600">Informal Context</h5>
+                                <p class="text-sm italic mb-3">"Hey, can you send me that file when you get a chance? Thanks!"</p>
+                                <ul class="text-xs space-y-1">
+                                    <li><i class="fas fa-check text-green-500 mr-1"></i> Contractions used</li>
+                                    <li><i class="fas fa-check text-green-500 mr-1"></i> Casual greeting</li>
+                                    <li><i class="fas fa-check text-green-500 mr-1"></i> Relaxed phrasing</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <h5 class="font-bold mb-3 text-blue-600">Professional Context</h5>
+                                <p class="text-sm italic mb-3">"Hi Sarah, Could you please send me the quarterly report file when you have a moment? Thank you."</p>
+                                <ul class="text-xs space-y-1">
+                                    <li><i class="fas fa-check text-blue-500 mr-1"></i> Polite request</li>
+                                    <li><i class="fas fa-check text-blue-500 mr-1"></i> Specific detail</li>
+                                    <li><i class="fas fa-check text-blue-500 mr-1"></i> Professional tone</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <h5 class="font-bold mb-3 text-red-600">Formal Context</h5>
+                                <p class="text-sm italic mb-3">"Dear Professor Smith, I am writing to request that you send me the quarterly report document at your earliest convenience. Thank you for your assistance."</p>
+                                <ul class="text-xs space-y-1">
+                                    <li><i class="fas fa-check text-red-500 mr-1"></i> Formal salutation</li>
+                                    <li><i class="fas fa-check text-red-500 mr-1"></i> Precise language</li>
+                                    <li><i class="fas fa-check text-red-500 mr-1"></i> No contractions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integration Section -->
+        <section id="integration" class="page bg-light">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">
+                            <span class="text-primary">Integrating</span> the 4 C's
+                        </h2>
+                        <p class="text-xl text-gray-600">How the principles work together in practice</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">The Synergy Effect</h3>
+                            <div class="space-y-4">
+                                <p class="text-lg">The 4 C's don't work in isolation—they reinforce and enhance each other. When all four principles are applied together, communication becomes truly effective.</p>
+                                <p class="text-lg">Think of them as the legs of a table: if one is weak or missing, the entire structure becomes unstable.</p>
+                                
+                                <div class="bg-gradient-to-r from-primary to-accent text-white p-6 rounded-xl">
+                                    <h4 class="text-xl font-bold mb-3">Integrated Communication Formula</h4>
+                                    <p class="text-center text-2xl font-bold">
+                                        Clarity × Coherence × Conciseness × Correctness = <br>Effective Communication
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Interconnections -->
+                            <div class="mt-8">
+                                <h4 class="text-xl font-bold mb-4 text-secondary">How They Connect</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 text-primary rounded-full p-2 mr-4">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold">Clarity enables Coherence</p>
+                                            <p class="text-sm text-gray-600">Clear ideas are easier to organize logically</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="bg-green-100 text-accent rounded-full p-2 mr-4">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold">Conciseness enhances Clarity</p>
+                                            <p class="text-sm text-gray-600">Removing unnecessary words makes main points clearer</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="bg-red-100 text-red-600 rounded-full p-2 mr-4">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold">Correctness supports Credibility</p>
+                                            <p class="text-sm text-gray-600">Accurate information makes your message trustworthy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Before & After: Integrated Example</h3>
+                            
+                            <!-- Before Example -->
+                            <div class="mb-8">
+                                <h4 class="font-bold text-lg mb-3 text-red-600">Weak Communication</h4>
+                                <div class="bg-gray-100 p-5 rounded-lg">
+                                    <p class="italic">"At this point in time, we are faced with a problematic situation with regard to our current sales figures, which have not been meeting expectations that were previously established. There are a variety of different factors that contribute to this current state of affairs that we find ourselves in."</p>
+                                </div>
+                                <div class="mt-4 grid grid-cols-4 gap-2">
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-times text-red-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Clarity</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-times text-red-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Coherence</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-times text-red-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Conciseness</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-minus text-yellow-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Correctness</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- After Example -->
+                            <div>
+                                <h4 class="font-bold text-lg mb-3 text-green-600">Effective Communication</h4>
+                                <div class="bg-gray-100 p-5 rounded-lg">
+                                    <p class="italic">"Sales are 15% below target this quarter. Three factors contribute to this shortfall: 1) increased competition, 2) seasonal slowdown, and 3) product delivery delays. To address this, we will launch a promotion next week and expedite deliveries."</p>
+                                </div>
+                                <div class="mt-4 grid grid-cols-4 gap-2">
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-check text-green-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Clarity</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-check text-green-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Coherence</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-check text-green-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Conciseness</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-1">
+                                            <i class="fas fa-check text-green-600 text-sm"></i>
+                                        </div>
+                                        <p class="text-xs">Correctness</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Analysis -->
+                            <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-bold mb-2 text-primary">What Improved?</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li><i class="fas fa-check text-accent mr-1"></i> Specific numbers instead of vague statements</li>
+                                    <li><i class="fas fa-check text-accent mr-1"></i> Clear structure (problem → causes → solutions)</li>
+                                    <li><i class="fas fa-check text-accent mr-1"></i> 70% reduction in word count</li>
+                                    <li><i class="fas fa-check text-accent mr-1"></i> Professional, direct tone</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application in Different Contexts -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary">Applying the 4 C's in Different Contexts</h3>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full">
+                                <thead>
+                                    <tr class="bg-primary text-white">
+                                        <th class="py-3 px-4 text-left">Context</th>
+                                        <th class="py-3 px-4 text-left">Priority C's</th>
+                                        <th class="py-3 px-4 text-left">Key Considerations</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="py-3 px-4 font-semibold">Academic Papers</td>
+                                        <td class="py-3 px-4">
+                                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs mr-1">Correctness</span>
+                                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Coherence</span>
+                                        </td>
+                                        <td class="py-3 px-4 text-sm">Formal tone, citations, logical argument structure, depth of analysis</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="py-3 px-4 font-semibold">Business Emails</td>
+                                        <td class="py-3 px-4">
+                                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs mr-1">Conciseness</span>
+                                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Clarity</span>
+                                        </td>
+                                        <td class="py-3 px-4 text-sm">Professional tone, clear requests, brevity, specific action items</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 font-semibold">Presentations</td>
+                                        <td class="py-3 px-4">
+                                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs mr-1">Clarity</span>
+                                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Coherence</span>
+                                        </td>
+                                        <td class="py-3 px-4 text-sm">Visual aids, engagement, storytelling, clear structure</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="py-3 px-4 font-semibold">Technical Reports</td>
+                                        <td class="py-3 px-4">
+                                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs mr-1">Correctness</span>
+                                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Clarity</span>
+                                        </td>
+                                        <td class="py-3 px-4 text-sm">Precision, data accuracy, technical terms, detailed explanations</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="mt-8 grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <h4 class="font-bold mb-3 text-primary">The Revision Process</h4>
+                                <ol class="space-y-3 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">1</span>
+                                        <span><strong>First Draft:</strong> Get ideas down without worrying about perfection</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">2</span>
+                                        <span><strong>Clarity Check:</strong> Ensure main points are clear and understandable</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">3</span>
+                                        <span><strong>Coherence Review:</strong> Organize logically and add transitions</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">4</span>
+                                        <span><strong>Conciseness Edit:</strong> Remove unnecessary words and phrases</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">5</span>
+                                        <span><strong>Correctness Proofread:</strong> Check facts, grammar, and tone</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <h4 class="font-bold mb-3 text-primary">Quick Self-Assessment</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <p class="text-sm font-semibold mb-1">For your current project:</p>
+                                        <div class="flex space-x-4">
+                                            <div class="text-center">
+                                                <div class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center mx-auto">
+                                                    <span class="text-primary font-bold">C</span>
+                                                </div>
+                                                <p class="text-xs mt-1">Clarity</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="w-10 h-10 rounded-full border-2 border-accent flex items-center justify-center mx-auto">
+                                                    <span class="text-accent font-bold">C</span>
+                                                </div>
+                                                <p class="text-xs mt-1">Coherence</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="w-10 h-10 rounded-full border-2 border-yellow-500 flex items-center justify-center mx-auto">
+                                                    <span class="text-yellow-600 font-bold">C</span>
+                                                </div>
+                                                <p class="text-xs mt-1">Conciseness</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="w-10 h-10 rounded-full border-2 border-red-500 flex items-center justify-center mx-auto">
+                                                    <span class="text-red-600 font-bold">C</span>
+                                                </div>
+                                                <p class="text-xs mt-1">Correctness</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm">Rate each principle from 1-5 for your communication. Identify which needs the most improvement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion" class="page">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">
+                            <span class="text-primary">Conclusion</span> & Next Steps
+                        </h2>
+                        <p class="text-xl text-gray-600">Mastering effective communication for academic and professional success</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Key Takeaways</h3>
+                            
+                            <div class="space-y-6">
+                                <!-- Takeaway 1 -->
+                                <div class="flex items-start">
+                                    <div class="bg-primary text-white rounded-lg p-3 mr-4">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">The 4 C's Framework</h4>
+                                        <p class="text-gray-600">Clarity, Coherence, Conciseness, and Correctness provide a comprehensive approach to improving all forms of communication.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Takeaway 2 -->
+                                <div class="flex items-start">
+                                    <div class="bg-accent text-white rounded-lg p-3 mr-4">
+                                        <i class="fas fa-puzzle-piece"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Interconnected Principles</h4>
+                                        <p class="text-gray-600">The principles work together synergistically. Weakness in one area affects the overall effectiveness of communication.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Takeaway 3 -->
+                                <div class="flex items-start">
+                                    <div class="bg-yellow-500 text-white rounded-lg p-3 mr-4">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Practical Application</h4>
+                                        <p class="text-gray-600">Each principle comes with specific techniques and strategies that can be immediately applied to improve communication.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Takeaway 4 -->
+                                <div class="flex items-start">
+                                    <div class="bg-red-500 text-white rounded-lg p-3 mr-4">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Continuous Improvement</h4>
+                                        <p class="text-gray-600">Communication skills develop with conscious practice and feedback using the 4 C's as a framework for growth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Final Quote -->
+                            <div class="mt-8 bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-xl">
+                                <p class="text-xl italic text-center">"The single biggest problem in communication is the illusion that it has taken place."</p>
+                                <p class="text-center mt-3">- George Bernard Shaw</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="section-title text-2xl font-bold mb-6">Your Action Plan</h3>
+                            
+                            <!-- Action Steps -->
+                            <div class="space-y-6">
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <div class="flex items-center mb-3">
+                                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                                            <span>1</span>
+                                        </div>
+                                        <h4 class="font-bold">Self-Assessment</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Identify which of the 4 C's is your weakest area. Review recent communications and evaluate them against each principle.</p>
+                                </div>
+                                
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <div class="flex items-center mb-3">
+                                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                                            <span>2</span>
+                                        </div>
+                                        <h4 class="font-bold">Targeted Practice</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Focus on improving your weakest area with specific exercises. Use the techniques provided for each principle.</p>
+                                </div>
+                                
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <div class="flex items-center mb-3">
+                                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                                            <span>3</span>
+                                        </div>
+                                        <h4 class="font-bold">Apply to Next Project</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Use the 4 C's as a checklist for your next important communication—whether it's a paper, presentation, or professional email.</p>
+                                </div>
+                                
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <div class="flex items-center mb-3">
+                                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                                            <span>4</span>
+                                        </div>
+                                        <h4 class="font-bold">Seek Feedback</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Ask peers or instructors to evaluate your communication using the 4 C's framework. Use their feedback for improvement.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Benefits -->
+                            <div class="mt-8 bg-accent text-white p-5 rounded-lg">
+                                <h4 class="font-bold text-lg mb-3">Benefits of Mastery</h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="text-center">
+                                        <i class="fas fa-graduation-cap text-2xl mb-2"></i>
+                                        <p class="text-xs font-semibold">Academic Success</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <i class="fas fa-briefcase text-2xl mb-2"></i>
+                                        <p class="text-xs font-semibold">Career Advancement</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <i class="fas fa-users text-2xl mb-2"></i>
+                                        <p class="text-xs font-semibold">Better Relationships</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <i class="fas fa-brain text-2xl mb-2"></i>
+                                        <p class="text-xs font-semibold">Clearer Thinking</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Summary -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary">Quick Reference Guide</h3>
+                        
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-lightbulb text-primary text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">Clarity</h4>
+                                <p class="text-xs text-gray-600">Use simple language, define terms, be specific, provide examples</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-link text-accent text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">Coherence</h4>
+                                <p class="text-xs text-gray-600">Organize logically, use transitions, ensure paragraph unity, maintain focus</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-bullseye text-yellow-600 text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">Conciseness</h4>
+                                <p class="text-xs text-gray-600">Eliminate unnecessary words, use strong verbs, prefer active voice, be direct</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-check-circle text-red-600 text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">Correctness</h4>
+                                <p class="text-xs text-gray-600">Fact-check, proofread, use proper grammar, match tone to context</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-8 border-t text-center">
+                            <p class="text-lg font-semibold mb-4">Thank you for exploring the principles of effective communication!</p>
+                            <p class="text-gray-600">Now go apply the 4 C's to make your communication clearer, more coherent, more concise, and more correct.</p>
+                            
+                            <div class="mt-6">
+                                <button id="backToTop" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition flex items-center mx-auto">
+                                    <i class="fas fa-arrow-up mr-2"></i> Back to Top
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white flex items-center">
+                        <i class="fas fa-comments text-primary mr-2"></i> Effective Communication
+                    </h3>
+                    <p class="text-gray-400 mt-2">Mastering the 4 C's for success</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#intro" class="text-gray-400 hover:text-white transition">Introduction</a>
+                    <a href="#conclusion" class="text-gray-400 hover:text-white transition">Conclusion</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>Presentation of Effective communication.</p>
+                <p class="mt-2">© 2026 Design by Rana Hammad . All rights are reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Progress bar functionality
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight;
+            const winHeight = window.innerHeight;
+            const scrollPercent = scrollTop / (docHeight - winHeight);
+            const scrollPercentRounded = Math.round(scrollPercent * 100);
+            
+            document.getElementById('progress-bar').style.width = scrollPercentRounded + '%';
+            
+            // Update active navigation link
+            updateActiveNavLink();
+        });
+        
+        // Update active navigation link
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            const scrollPosition = window.pageYOffset + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active-section');
+                if (link.getAttribute('data-section') === currentSection) {
+                    link.classList.add('active-section');
+                }
+            });
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Back to top button
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Show solution for conciseness exercise
+        document.querySelector('button').addEventListener('click', function() {
+            const solution = document.getElementById('solution1');
+            if (solution.classList.contains('hidden')) {
+                solution.classList.remove('hidden');
+                this.textContent = 'Hide Solution';
+            } else {
+                solution.classList.add('hidden');
+                this.textContent = 'Show Solution';
+            }
+        });
+        
+        // Initialize active nav link
+        updateActiveNavLink();
+        
+        // Add animation to principle cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all principle cards
+        document.querySelectorAll('.principle-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+
